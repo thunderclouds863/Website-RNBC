@@ -8,22 +8,11 @@ Deployed: https://rnbc-2022.web.app/
 
 Situs statis (HTML + CSS + sedikit JavaScript), tanpa build step.
 
-| Halaman | Isi |
-| --- | --- |
-| `index.html` | Beranda: ringkasan acara, kategori, timeline singkat, CTA pendaftaran |
-| `about.html` | Deskripsi lengkap, tema acara, after movie |
-| `event.html` | 10 bidang kategori dan timeline 9 tahap beserta ketentuannya (`#tahap-1` … `#tahap-9`) |
-| `faqs.html` | FAQ (dirangkum dari `assets/pdf/GuideBook.pdf`) |
-| `information.html` | Unduhan guidebook dan narahubung WhatsApp |
-| `404.html` | Halaman tidak ditemukan (dipakai Firebase Hosting) |
+Semua informasi ada di `index.html`, dibagi per bagian: alur 3 fase, `#kategori`, `#timeline` (tiap tahap punya anchor `#tahap-1` … `#tahap-9`), `#tentang`, `#faq` (dirangkum dari `assets/pdf/GuideBook.pdf`), dan `#kontak`. Panel ringkasan (peserta, tanggal, biaya, tombol daftar dan guidebook) menempel di sisi kanan pada layar lebar.
 
-`home.html`, `moreabout.html`, dan `timeline1.html` … `timeline9.html` hanya mengalihkan ke halaman baru agar tautan lama tetap berfungsi.
+Halaman lama (`home`, `about`, `moreabout`, `event`, `faqs`, `information`, `timeline1`–`timeline9`) hanya mengalihkan ke bagian yang sesuai di `index.html`, agar tautan yang sudah dibagikan tetap berfungsi. `404.html` dipakai Firebase Hosting.
 
-Aset: `assets/css/styles.css` (semua gaya, termasuk tema gelap), `assets/js/main.js` (menu mobile, tema, membuka tahap timeline dari URL), `assets/img/icons.svg` (ikon SVG).
-
-## Mengubah konten
-
-Header dan footer ditulis ulang di setiap halaman. Jika mengubah menu atau footer, ubah di semua halaman utama (`index`, `about`, `event`, `faqs`, `information`, `404`).
+Aset: `assets/css/styles.css` (semua gaya, termasuk tema gelap), `assets/js/main.js` (tema, tab aktif, membuka tahap/FAQ dari URL), `assets/img/icons.svg` (ikon SVG).
 
 ## Menjalankan lokal
 

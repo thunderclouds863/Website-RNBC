@@ -2,8 +2,8 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
   <title>Halaman tidak ditemukan · R’nB Startup Hackathon 2022</title>
   <meta name="description" content="Halaman tidak ditemukan.">
   <meta name="theme-color" content="#1e1916">
@@ -11,73 +11,48 @@
   <script>try{var t=localStorage.getItem('rnbc-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Langsung ke konten</a>
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a class="brand" href="index.html">
-        <img src="assets/img/logo.png" alt="R’nB Research &amp; Business Universitas Diponegoro" width="88" height="44">
-        <span class="brand__text"><strong>UKM Research and Business</strong>Universitas Diponegoro</span>
+  <a class="skip-link" href="#konten">Langsung ke konten</a>
+  <header class="masthead">
+    <div class="wrap masthead__inner">
+      <a class="masthead__brand" href="index.html" aria-label="R’nB Startup Hackathon 2022, beranda">
+        <img src="assets/img/logo.png" alt="" width="88" height="44">
       </a>
-      <nav class="nav" id="site-nav" aria-label="Navigasi utama">
-        <ul class="nav__list">
-          <li><a class="nav__link" href="index.html">Beranda</a></li>
-          <li><a class="nav__link" href="about.html">Tentang</a></li>
-          <li><a class="nav__link" href="event.html">Kategori &amp; Timeline</a></li>
-          <li><a class="nav__link" href="faqs.html">FAQ</a></li>
-          <li><a class="nav__link" href="information.html">Informasi</a></li>
+      <nav class="tabs" aria-label="Bagian halaman">
+        <ul>
+          <li><a href="index.html#kategori">Kategori</a></li>
+          <li><a href="index.html#timeline">Timeline</a></li>
+          <li><a href="index.html#tentang">Tentang</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#kontak">Kontak</a></li>
         </ul>
       </nav>
-      <div class="header-actions">
-        <button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Gunakan tema gelap">
-          <svg class="icon icon-moon" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#moon"></use></svg><svg class="icon icon-sun" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#sun"></use></svg>
-        </button>
-        <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">
-          <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#menu"></use></svg><span>Menu</span>
-        </button>
-      </div>
     </div>
   </header>
-  <main id="main">
-    <section class="container not-found">
-      <span class="code">404</span>
+  <main id="konten">
+    <div class="wrap intro intro--404">
+      <p class="intro__org">404</p>
       <h1>Halaman tidak ditemukan</h1>
-      <p class="muted">Alamat yang Anda buka tidak ada atau sudah dipindahkan.</p>
-      <div class="btn-row">
-        <a class="btn btn--primary" href="index.html">Ke beranda</a>
-        <a class="btn btn--secondary" href="event.html#timeline">Lihat timeline</a>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h2>Sekretariat</h2>
-          <p>Student Center, Universitas Diponegoro<br>Jl. Prof. Soedarto, S.H. No. 13, Tembalang, Semarang 50275</p>
-          <a href="https://www.google.com/maps/search/?api=1&query=Student+Center+Universitas+Diponegoro+Tembalang+Semarang" target="_blank" rel="noopener">Buka di Google Maps</a>
-        </div>
-        <div>
-          <h2>Instagram</h2>
-          <ul>
-            <li><a href="https://www.instagram.com/rnb_competition" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#instagram"></use></svg>@rnb_competition</a></li>
-            <li><a href="https://www.instagram.com/ukm_rnb" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#instagram"></use></svg>@ukm_rnb</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2>Halaman</h2>
-          <ul>
-            <li><a href="event.html#timeline">Timeline</a></li>
-            <li><a href="faqs.html">FAQ</a></li>
-            <li><a href="information.html">Guidebook &amp; kontak</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="footer-copy">© R’nB UNDIP · Kabinet Kaizen</p>
+      <p class="intro__lead">Alamat yang Anda buka tidak ada atau sudah dipindahkan. Semua informasi acara sekarang ada di satu halaman.</p>
+      <p><a class="btn btn--primary" href="index.html">Ke halaman utama</a></p>
     </div>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <p class="footer__org">UKM Research and Business<br>Universitas Diponegoro</p>
+        <p>Student Center, Jl. Prof. Soedarto, S.H. No. 13, Tembalang, Semarang 50275 · <a href="https://www.google.com/maps/search/?api=1&query=Student+Center+Universitas+Diponegoro+Tembalang+Semarang" target="_blank" rel="noopener">Peta</a></p>
+      </div>
+      <ul class="footer__links">
+        <li><a href="https://www.instagram.com/rnb_competition" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#instagram"></use></svg>@rnb_competition</a></li>
+        <li><a href="https://www.instagram.com/ukm_rnb" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#instagram"></use></svg>@ukm_rnb</a></li>
+        <li><button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false"><svg class="icon icon-moon" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#moon"></use></svg><svg class="icon icon-sun" aria-hidden="true" focusable="false"><use href="assets/img/icons.svg#sun"></use></svg><span>Tema gelap</span></button></li>
+      </ul>
+    </div>
+    <div class="wrap"><p class="footer__copy">© R’nB UNDIP · Kabinet Kaizen</p></div>
   </footer>
   <script src="assets/js/main.js"></script>
 </body>
